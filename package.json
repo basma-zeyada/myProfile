@@ -1,0 +1,23 @@
+{
+  "name": "myprofile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basma-zeyada/myProfile.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/basma-zeyada/myProfile/issues"
+  },
+  "homepage": "https://github.com/basma-zeyada/myProfile#readme",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "node-sass": "^5.0.0"
+  }
+}
