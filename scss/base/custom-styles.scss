@@ -1,0 +1,35 @@
+// Buttons
+.btn-secondary{
+  @include btn-secondary
+}
+
+// border
+.rounded-xl{
+  border-radius: $border-radius-xl;
+}
+
+
+// images
+.img-fill{
+  @include img-fill
+}
+
+//form components
+//*************
+//inputs
+
+.form-control{
+  background-color: $secondary;
+  border-color: $secondary;
+  @extend .rounded-pill;
+}
+
+.card{
+  @extend .mb-3;
+}
+
+
+//Post
+.post{
+  @include post
+}

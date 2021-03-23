@@ -1,0 +1,9 @@
+.nav-pills {
+  .nav-link{
+    @include navlink;
+
+    &.active{
+      @include navlink-active
+    }
+  }
+}

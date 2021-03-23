@@ -1,0 +1,80 @@
+$btn-secondary-color: lighten(saturate(adjust-hue($secondary, 3), 12.01), 50.00);
+
+// Buttons
+@mixin btn-secondary {
+  @include button-variant($secondary, $secondary);
+  font-weight: bold;
+  color: $dark;
+}
+
+
+// Navs
+@mixin navlink {
+  color: $gray;
+  background-color: transparent;
+  border-bottom: 3px solid transparent;
+  font-weight: bold;
+}
+
+@mixin navlink-active {
+  color: $primary;
+  background-color: transparent;
+  border-color: $primary;
+}
+
+@mixin img-fill {
+  @extend .w-100;
+  @extend .h-100;
+}
+
+@mixin post {
+  .post-author{
+    @extend .d-flex;
+    @extend .border-bottom;
+    @extend .pb-2;
+    .post-author-avatar{
+      img{
+        @extend .rounded-circle;
+        @extend .avatar-sm;
+        @extend .mx-2;
+      }
+    }
+    .post-author-name{
+      @extend .text-dark;
+      @extend .font-weight-bold;
+    }
+  }
+  .post-date{
+    color: $gray;
+    font-size: $font-size-sm;
+    @extend .font-weight-bold;
+  }
+
+
+  .post-body{
+    @extend .p-2;
+  }
+
+  .post-actions{
+    @extend .d-flex;
+    @extend .border-top;
+    @extend .justify-content-between;
+    @extend .text-center;
+    @extend .py-2;
+
+    > *{
+      @extend .flex-fill;
+
+      a{
+        @extend .font-weight-bold;
+        color: $gray;
+      }
+    }
+  }
+
+  .post-footer{
+    @extend .border-top;
+    @extend .row;
+    @extend .mx-3;
+  }
+}

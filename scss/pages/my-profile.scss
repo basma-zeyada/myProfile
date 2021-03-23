@@ -1,0 +1,18 @@
+@import '../base/typography';
+@import '../vendors/vendors';
+@import '../layout/common';
+@import '../layout/navigation';
+@import '../base/custom-styles';
+@import '../layout/header';
+@import '../components/avatar';
+
+.profile-page{
+  .profile-header{
+    background: linear-gradient(180deg, #d9d0c6 0%, #fdfcfc 50%, white 55%, white 100%);
+  }
+    .profile-avatar{
+    bottom: -15%;
+    // left: absolute-center($avatar-lg)
+    left: calc(50% - (11em /2));
+  }
+}

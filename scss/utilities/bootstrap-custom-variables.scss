@@ -1,0 +1,36 @@
+// Custom Variables
+//
+// Color system
+
+$primary:       #1876f2;
+$secondary:     #e4e6eb;
+$success:       #28a745;
+$info:          #17a2b8;
+$warning:       #ffc107;
+$danger:        #dc3545;
+$light:         #f0f2f5;
+$dark:          #030303;
+$gray:          #65676b;
+$white:         #fff;
+
+
+// Font
+$font-size-base:              0.875rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                $font-size-base * 1.25 !default;
+$font-size-sm:                $font-size-base * .875 !default;
+
+// Border
+$border-radius-xl: .5rem;
+
+
+// Avatar
+$avatar-sm: 3em;
+$avatar-lg: 10em;
+
+// Grid containers
+$container-max-widths: (
+  sm: 540px,
+  md: 768px,
+  lg: 960px,
+  xl: 1250px
+);
