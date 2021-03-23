@@ -26,6 +26,7 @@
 
 .card{
   @extend .mb-3;
+  box-shadow: $shadow-sm;
 }
 
 
