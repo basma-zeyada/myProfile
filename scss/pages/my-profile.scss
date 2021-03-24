@@ -3,8 +3,10 @@
 @import '../layout/common';
 @import '../layout/navigation';
 @import '../base/custom-styles';
-@import '../layout/header';
+@import '../components/card';
 @import '../components/avatar';
+@import '../components/post';
+@import '../components/input';
 
 .profile-page{
   .profile-header{

@@ -8,29 +8,11 @@
   border-radius: $border-radius-xl;
 }
 
+.rounded-xxl{
+  border-radius: $border-radius-xxl;
+}
 
 // images
 .img-fill{
   @include img-fill
-}
-
-//form components
-//*************
-//inputs
-
-.form-control{
-  background-color: $secondary;
-  border-color: $secondary;
-  @extend .rounded-pill;
-}
-
-.card{
-  @extend .mb-3;
-  box-shadow: $shadow-sm;
-}
-
-
-//Post
-.post{
-  @include post
 }

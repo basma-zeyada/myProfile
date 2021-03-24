@@ -7,7 +7,6 @@ $btn-secondary-color: lighten(saturate(adjust-hue($secondary, 3), 12.01), 50.00)
   color: $dark;
 }
 
-
 // Navs
 @mixin navlink {
   color: $gray;
@@ -22,11 +21,39 @@ $btn-secondary-color: lighten(saturate(adjust-hue($secondary, 3), 12.01), 50.00)
   border-color: $primary;
 }
 
+// Images
 @mixin img-fill {
   @extend .w-100;
   @extend .h-100;
 }
 
+// Comment
+@mixin comment {
+  @extend .d-flex;
+  @extend .mb-3;
+
+  .comment-avatar{
+    @extend .avatar-sm;
+    @extend .rounded-circle;
+  }
+
+  .comment-body{
+    background-color: $secondary;
+    font-size: $font-size-sm;
+    @extend .py-2;
+    @extend .px-3;
+    @extend .ml-2;
+    @extend .rounded-xxl;
+
+    a{
+      @extend .text-dark;
+      @extend .font-weight-bold;
+    }
+  }
+}
+
+
+// Post
 @mixin post {
   .post-author{
     @extend .d-flex;
@@ -53,11 +80,23 @@ $btn-secondary-color: lighten(saturate(adjust-hue($secondary, 3), 12.01), 50.00)
 
   .post-body{
     @extend .p-2;
+    @extend .border-bottom;
+  }
+
+  .post-reactions{
+    @extend .p-3;
+    @extend .col-12;
+    @extend .border-bottom;
+    @extend .d-flex;
+    @extend .justify-content-between;
+
+    a{
+      color: $gray;
+    }
   }
 
   .post-actions{
     @extend .d-flex;
-    @extend .border-top;
     @extend .justify-content-between;
     @extend .text-center;
     @extend .py-2;
@@ -74,7 +113,12 @@ $btn-secondary-color: lighten(saturate(adjust-hue($secondary, 3), 12.01), 50.00)
 
   .post-footer{
     @extend .border-top;
-    @extend .row;
     @extend .mx-3;
+
+    .post-comments{
+      .comment{
+        @include comment;
+      }
+    }
   }
 }

@@ -1,0 +1,5 @@
+.form-control{
+  background-color: $secondary;
+  border-color: $secondary;
+  @extend .rounded-pill;
+}

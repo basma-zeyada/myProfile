@@ -24,54 +24,31 @@
           </div>
         </div>
         <h1 class="text-center mb-1">Basma Zeyada</h1>
-        <h6 class="text-center font-weight-bold pt-3 pb-2"><a href="#">Edit</a></h6>
+        <h6 class="text-center pb-2">A short precise slogan</h6>
 
         <div class="col-xs-12">
           <div>
-            <div class="d-flex justify-content-between border-top">
+            <div class="d-flex justify-content-between border-top px-0">
               <nav class="navbar navbar-expand-lg">
-                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                <ul class="nav nav-pills d-none d-md-flex" id="pills-tab" role="tablist">
                   <li class="nav-item" role="presentation">
                     <a class="nav-link rounded-0 py-3 active" id="intro-tab" data-toggle="pill" href="#intro" role="tab" aria-controls="intro" aria-selected="true">Posts</a>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <a class="nav-link rounded-0 py-3" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">About</a>
+                    <a class="nav-link rounded-0 py-3" id="about-tab" data-toggle="pill" href="#about" role="tab" aria-controls="pills-profile" aria-selected="false">About</a>
                   </li>
-                  <li class="nav-item" role="presentation">
-                    <a class="nav-link rounded-0 py-3" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Photos</a>
+                  <li class="nav-item d-none d-md-block" role="presentation">
+                    <a class="nav-link rounded-0 py-3" id="photos-tab" data-toggle="pill" href="#photos" role="tab" aria-controls="pills-contact" aria-selected="false">Photos</a>
                   </li>
-
-                  <li class="nav-item dropdown d-lg-none align-self-center">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      More
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <ul class="list-unstyled">
-                        <li class="nav-item" role="presentation">
-                          <a class="nav-link rounded-0 py-0" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Photos</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <a class="nav-link rounded-0 py-0" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Videos</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <a class="nav-link rounded-0 py-0" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Check-ins</a>
-                        </li>
-                      </ul>
-                    </div>
+                  <li class="nav-item d-none d-md-block" role="presentation">
+                    <a class="nav-link rounded-0 py-3" id="pills-contact-tab" data-toggle="pill" href="#videos" role="tab" aria-controls="pills-contact" aria-selected="false">Videos</a>
                   </li>
-
-                  <li class="nav-item d-none d-lg-block" role="presentation">
-                    <a class="nav-link rounded-0 py-3" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Videos</a>
-                  </li>
-                  <li class="nav-item d-none d-lg-block" role="presentation">
-                    <a class="nav-link rounded-0 py-3" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Check-ins</a>
-                  </li>
-                  <li class="nav-item d-none d-lg-block" role="presentation">
-                    <a class="nav-link rounded-0 py-3" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Check-ins</a>
+                  <li class="nav-item d-none d-md-block" role="presentation">
+                    <a class="nav-link rounded-0 py-3" id="pills-contact-tab" data-toggle="pill" href="#checkin" role="tab" aria-controls="pills-contact" aria-selected="false">Check-ins</a>
                   </li>
                 </ul>
               </nav>
-              <div class="align-self-center">
+              <div class="align-self-center my-2 my-sm-0 mx-auto mx-sm-0">
                 <button class="btn btn-secondary"> <i class="fas fa-pencil-alt"></i> Edit Profile</button>
                 <button class="btn btn-secondary" aria-label="view as"> <i class="fas fa-eye"></i></button>
                 <button class="btn btn-secondary" aria-label="search"> <i class="fas fa-search"></i></button>
@@ -143,13 +120,13 @@
               <div class="card rounded-xl">
                 <div class="card-body px-0 py-2">
                   <div class="post">
-                    <div class="post-body">
+                    <div class="post-body border-0">
                       <form class="d-flex">
                         <img src="../images/profile/user.jpg" class="rounded-circle avatar-sm"  alt="personal profile photo">
                         <input type="text" class="form-control mx-2" placeholder="What's on your mind?" />
                       </form>
                     </div>
-                    <div class="post-footer">
+                    <div class="post-footer row">
                       <div class="col-4 text-center pt-3 font-weight-bold">
                         <i class="fas fa-video fa-lg text-danger mx-1"></i>
                         Live Video
@@ -190,6 +167,15 @@
                     <div class="post-body">
                       <img src="../images/post.jpg" class="img-fill" alt="funny image" >
                     </div>
+                    <div class="post-reactions">
+                      <div>
+                        <i class="fab fa-gratipay fa-lg text-danger"></i>
+                        <a href="#">Basma Zeyada and 5 others</a>
+                      </div>
+                      <div>
+                        <a href="#">2 comments</a>
+                      </div>
+                    </div>
                     <div class="post-actions">
                       <div>
                         <a href="#"><i class="far fa-thumbs-up fa-lg"></i> Like</a>
@@ -199,6 +185,22 @@
                       </div>
                     </div>
                     <div class="post-footer pt-3">
+                      <div class="post-comments">
+                        <div class="comment">
+                          <img src="../images/user.png" class="comment-avatar" alt="user photo - comment">
+                          <div class="comment-body">
+                            <a href="#">A.Friend</a>
+                            <p class="m-0">Here's a first comment</p>
+                          </div>
+                        </div>
+                        <div class="comment">
+                          <img src="../images/profile/user.jpg" class="comment-avatar" alt="user photo - comment">
+                          <div class="comment-body">
+                            <a href="#">Basma Zeyada</a>
+                            <p class="m-0">And a comment on your comment</p>
+                          </div>
+                        </div>
+                      </div>
                       <form class="d-flex flex-fill">
                         <img src="../images/profile/user.jpg" class="rounded-circle avatar-sm"  alt="personal profile photo">
                         <input type="text" class="form-control mx-2" placeholder="Write a comment…" />
@@ -210,8 +212,7 @@
             </div>
           </div>
         </div>
-        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">.aa..</div>
-        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+        <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about">...</div>
       </div>
   </div>
   </div>

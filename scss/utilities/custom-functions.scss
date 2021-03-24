@@ -1,10 +1,12 @@
 // Center absolute element relative to its parent
 //** Element's parent has to be 'position-relative'
 
-@function absolute-center($element-width) {
-  @if $element-width == null {
-    @return 50%;
-  }
-  $value: calc(50% - ($element-width / 2));
-  @return $value
-}
+//***** // TO DO // ********
+
+// @function absolute-center($element-width) {
+//   @if $element-width == null {
+//     @return 50%;
+//   }
+//   $value: calc(50% - ($element-width / 2));
+//   @return $value
+// }
