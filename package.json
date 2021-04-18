@@ -1,6 +1,7 @@
 {
   "name": "myprofile",
   "version": "1.0.0",
+  "homepage": "https://basma-zeyada.github.io/task/html/myProfile.html",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -15,7 +16,6 @@
   "bugs": {
     "url": "https://github.com/basma-zeyada/myProfile/issues"
   },
-  "homepage": "https://github.com/basma-zeyada/myProfile#readme",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
     "bootstrap": "^4.6.0",
