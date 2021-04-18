@@ -10692,6 +10692,51 @@ body {
   background-color: #e4e6eb;
   border-color: #e4e6eb; }
 
+.gallery-preview a {
+  cursor: pointer; }
+  .gallery-preview a:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(101, 103, 107, 0.1); }
+
+.image-viewer {
+  top: 0;
+  left: 0;
+  display: none; }
+  .image-viewer .close {
+    color: #fff;
+    font-size: 50px;
+    text-decoration: none;
+    left: 30px; }
+    .image-viewer .close:hover {
+      text-decoration: none;
+      color: #fff; }
+  .image-viewer .prev, .image-viewer .next {
+    font-size: 60px;
+    color: #fff;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #555;
+    top: 50%;
+    border-radius: 50%;
+    line-height: 0.7;
+    text-decoration: none !important; }
+  .image-viewer .prev {
+    left: 3%;
+    padding-left: 13px; }
+  .image-viewer .next {
+    right: 3%;
+    padding-left: 16px; }
+  .image-viewer .image-side {
+    background-color: #030303; }
+  .image-viewer .comments-side {
+    background-color: #fff; }
+
 .profile-page .profile-header {
   background: linear-gradient(180deg, #d9d0c6 0%, #fdfcfc 50%, white 55%, white 100%); }
 

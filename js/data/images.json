@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "name": "Pink Clouds",
+    "date_posted": "15 March 2021",
+    "description": "Beautiful Clouds taken by an artist",
+    "src": "../images/img1.png"
+  },
+  {
+    "id": "2",
+    "name": "Weird Cat",
+    "date_posted": "18 March 2021",
+    "description": "Such a weird cat don't you think",
+    "src": "../images/img2.png"
+  },
+  {
+    "id": "3",
+    "name": "le me",
+    "date_posted": "25 March 2021",
+    "description": "Photo taken by me",
+    "src": "../images/img3.jpeg"
+  },
+  {
+    "id": "4",
+    "name": "Summer",
+    "date_posted": "29 March 2021",
+    "description": "Hello Summer",
+    "src": "../images/img4.jpg"
+  },
+  {
+    "id": "5",
+    "name": "pets",
+    "date_posted": "5 April 2021",
+    "description": "Hary & Lary",
+    "src": "../images/img5.jpg"
+  },
+  {
+    "id": "6",
+    "name": "parrot",
+    "date_posted": "10 April 2021",
+    "description": "Dark but Deep",
+    "src": "../images/img6.jpeg"
+  }
+]

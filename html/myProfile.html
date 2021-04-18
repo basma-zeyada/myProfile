@@ -93,26 +93,8 @@
                     <h4 class="card-title font-weight-bold">Photos</h4>
                     <a href="#">See All Photos</a>
                   </div>
-                  <div class="row">
-                    <div class="col-4 p-1">
-                      <img src="../images/img1.png" class="img-fill" alt="profile photo">
-                    </div>
-                    <div class="col-4 p-1">
-                      <img src="../images/img2.png" class="img-fill" alt="profile photo">
-                    </div>
-                    <div class="col-4 p-1">
-                      <img src="../images/img3.jpeg" class="img-fill" alt="profile photo">
-                    </div>
-                    <div class="col-4 p-1">
-                      <img src="../images/img4.jpg" class="img-fill" alt="profile photo">
-                    </div>
-                    <div class="col-4 p-1">
-                      <img src="../images/img5.jpg" class="img-fill" alt="profile photo">
-                    </div>
-                    <div class="col-4 p-1">
-                      <img src="../images/img6.jpeg" class="img-fill" alt="profile photo">
-                    </div>
-                  </div>
+                  <ul class="d-flex flex-wrap list-unstyled gallery-preview">
+                  </ul>
                 </div>
               </div>
             </div>
@@ -217,9 +199,51 @@
   </div>
   </div>
 
+  <div class="position-fixed w-100 h-100 image-viewer">
+    <div class="row h-100">
+      <div class="col-sm-9 d-flex justify-content-center image-side">
+        <a href="#" class="close position-absolute">×</a>
+        <div class="viewer-controls">
+          <a href="#" class="prev">‹</a>
+          <a href="#" class="next">›</a>
+        </div>
+        <div class="col-sm-6 align-self-center">
+          <img src="" id="image-src" class="img-fill" />
+        </div>
+      </div>
+      <div class="col-sm-3 pt-3 comments-side">
+        <div class="post">
+          <div class="post-author">
+            <div class="post-author-avatar">
+              <img src="../images/profile/user.jpg" alt="Basma Zeyada">
+            </div>
+            <div>
+              <a href="#" class="post-author-name">
+                Basma Zeyada
+              </a>
+              <div class="post-date"></div>
+            </div>
+          </div>
+          <div class="post-body">
+          </div>
+          <div class="post-actions">
+            <div>
+              <a href="#"><i class="far fa-thumbs-up fa-lg"></i> Like</a>
+            </div>
+            <div>
+              <a href="#"><i class="far fa-comment-alt"></i> Comment</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://unpkg.com/@popperjs/core@2"></script>
   <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/components/gallery.js"></script>
+  <script src="../js/pages/profile.js"></script>
 
 </body>
 </html>
